@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html id="intro">
+
+<head>
+  <title>INTOCODE</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <section class="container-fluid p-0 mb-5">
+    <header class=" fixed-top d-flex flex-column justify-content-center col-12 bg-secondary opacity-0.5 mb-5">
+      <div class="row d-flex justify-content-center">
+        <div class=" d-flex justify-content-center col-12  col-xs-12  col-sm-12 	col-md-6	 col-lg-6 	col-xl-6">
+          <h1>
+              <ul class=" d-flex list-inline mr-sm-auto col-sm-6 col-md-12 col-lg-12 col-12">
+                 <li class="list-inline-item ">INTO</li>
+                 <li class="list-inline-item">_</li>
+                 <li class="list-inline-item ">CODE</li>
+             </ul>
+            </h1>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+
+        <nav class="navbar navbar-light  col-12 col-xs-12 col-sm-12 	col-md-6	 col-lg-6 	col-xl-6">
+          <div class="btn-group col-lg-3 col-12" role="group" aria-label="Button group with nested dropdown">
+            <a href="#intro" class="btn btn-primary" role="button">HTML</a>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#intro">Introduction</a>
+                <a class="dropdown-item" href="#structure">Structure De Base</a>
+                <a class="dropdown-item" href="#balises">Balises Structurantes</a>
+                <a class="dropdown-item" href="#">Creation De Fichier HTML</a>
+                <a class="dropdown-item" href="#inline/block">Les Balises Inline/Block</a>
+                <a class="dropdown-item" href="#BEM">B.E.M</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group col-lg-3 col-12" role="group" aria-label="Button group with nested dropdown">
+            <a href="#intro" class="btn btn-primary" role="button">CSS</a>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#">Introduction</a>
+                <a class="dropdown-item" href="#">Selecteurs</a>
+                <a class="dropdown-item" href="#">Propriétés/Valeurs Courantes</a>
+                <a class="dropdown-item" href="#">Margin/Padding</a>
+                <a class="dropdown-item" href="#">Flexbox</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group col-lg-3 col-12" role="group" aria-label="Button group with nested dropdown">
+            <a href="#intro" class="btn btn-primary" role="button">Framework</a>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#">Introduction</a>
+                <a class="dropdown-item" href="#">Bootstrap</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      </nav>
+      </div>
+      </div>
+    </header>
+  </section>
+  <section class="container-fluid row p-0 block__body html__page pl-4 pr-4 mt-5">
+    <article class=" mx-auto justify-content-around  col-12 text-justified mt-5 m-2">
+      <h2 id="structure"class="mt-5 text-center">Introduction</h2>
+      <p class=" mx-auto">
+        Le HTML, ou « HyperText Markup Language », est un langage permettant de réaliser des pages web.
+        Tout les sites internet ont besoin du HTML pour s’afficher dans le navigateur.
+      </p>
+      <p>
+        Définition : HyperText Markup Language (HTML) est un langage de “mark up (balisage)”
+        qui définit la structure logique d’un document HTML diffusé sur le Web.
+      </p>
+    </article>
+    <!-- Fin article introduction html -->
+
+    <!-- Début de la Structure de base -->
+    <article class="justify-content-around col-12 text-justified m-2">
+      <h2> Structure de base HTML </h2>
+      <p> Le document HTML commence toujours par ce que nous appelons la structure de base. Cette structure est obligatoire et constant.<br>
+      </p>
+
+
+
+      <img src="image/structure_html_1.PNG" alt="">
+
+      <p>
+        Il est possible de comprendre le document HTML de manière très simple,
+        grâce à une division des blocs, selon la structure suivante:
+      </p>
+
+        <h2>(!DOCTYPE)</h2>
+
+        <p>  Le Doctype s’insère en tout début de page. Il sert à définir le type du document
+          afin qu’il soit correctement interprété par le navigateur.
+          Le Doctype doit toujours se situer avant la balise HTML.
+       </p>
+
+         <p> <strong>ATTENTION</strong> Le doctype est OBLIGATOIRE et doit toujours être
+           la PREMIERE LIGNE de votre document.
+         </p>
+
+        <h3>  META  </h3>
+
+        <p>
+          Les balises Meta sont des informations incluses à l'intérieur des pages web sous forme de balises.
+          Ces informations sont placées dans l'en-tête d'une page web à l'intérieur de la balise HEAD.
+          Les balises meta sont relative à la page et donnent des informations plus généralement aux aux moteurs
+          de recherche (bien que d'autres applications sont possible).
+        </p>
+
+        <h3>HEAD</h3>
+        <p id="balises">
+          La balise HEAD contient l'en-tête du document html,
+          c'est à dire toutes les informations non visibles par l'internaute.
+          C'est une balise qu'il ne faut pas oublier. Elle fait partie des 4 balises Html qui
+          doivent être présentes dans tous les documents HTML (HTML, HEAD, TITLE, BODY)
+        </p>
+
+        <h3>BODY</h3>
+
+        <p>
+          La balise BODY contient le corps du document html,
+          c'est à dire toutes les informations visibles par l'internaute.
+        </p>
+
+
+    </article>
+    <!-- Fin de la Structure de base -->
+
+    <!-- Début de Balise structurante -->
+    <article class="justify-content-around col-12 text-justified m-2">
+      <h2>Balise structurante</h2>
+      <p>
+        Des balises appellées structurantes permettes de structurer votre page web et votre code,
+        comme vous pouvez le voir dans le schéma ci-dessous.
+      </p>
+      <img src="image/balise_structurante.png" alt="Schéma" />
+      <p>
+        La balise HEADER, est l’en-tête de la page. Permet de contenir un logo, barre de navigation ,
+        titre etc...
+      </p>
+      <p>
+         La balise NAV,représente diffèrent liens vers d'autres pages ou des article
+         de cette page. Autrement dit, c'est une section destinée à la navigation dans un document.
+      </p>
+
+      <p>
+        La balise SECTION, celle la permet de regrouper des contenus de même thème.
+      </p>
+
+      <p>
+       La balise ARTICLE, elle regroupe des éléments indépendant. Exemple pour des articles de journaux.
+      </p>
+      <p>
+        La balise ASIDE, sert a mettre des informations complémentaires, il se situe souvent à droite de la page.
+      </p>
+
+      <p>
+        La balise FOOTER, est le pied de page, on y trouve souvent les liens contact, nom, mentions légales.
+      </p>
+
+      <h3>Les balise Titre</h3>
+      <p>
+        Les balise titre vont de H1 a H6 , bien sur toute c'est balise on est un ordre precis.
+      </p>
+      <ul>
+        <li>h1:Titre principal.</li>
+        <li>h2 :Sous-titres.</li>
+        <li>h3 :Sous sous-titres, etc...</li>
+      </ul>
+
+      <h4> Les balises liste </h4>
+      <p>
+        Les balises liste serve comme sont nom l'indique a créer des liste. Elles ce compose de deux
+        liste non-ordonnées et les listes ordonnées.
+        <ul>
+          <li> La balise UL permet de créer une liste non-ordonnée</li>
+          <li> La balise OL permet de créer une liste ordonnée</li>
+          <li> L'élément LI est obligatoirement ajouté dans les deux balise liste. Sans cella
+                la liste ne fonctionnera pas comme tel</li>
+        </ul>
+
+      <h4> Les liste numeroter</h4>
+
+        <img src="image/structure_html_2.PNG" alt="">
+
+      <h4> La Balise images </h4>
+      <img src="image/structure_balise_image" alt="">
+
+        <p> Cette balise se compose de 2 parties :
+            "src= liens vers la photo" Cet attribut renseigne votre chemin absolu ou non-absolu vers l'image.
+            "alt= Description de l'image" Cet attribut définit le texte utilisé lorsqu'il est impossible d'afficher l'image
+            peut-être utilisé par des personnes aveugles ou malvoyants, ils passeront leur souris dessus est leur logiciel
+            de lecture lira la description de l'image.
+        </p>
+
+
+    </article>
+    <!-- Fin Balise Structurante -->
+
+    <article class="justify-content-around col-12 text-justified m-2">
+      <h2>  Création de fichier HTML </h2>
+
+      <p>Le cheminement de votre dossier</p>
+      <h3>Pour une image :</h3>
+
+      <img src="image/fichier.jpg">
+
+      <ul>
+        <li>
+         Crée un dossier vide avec comme nom (le nom de votre choix).
+        </li>
+        <li id="inline/block"> Dans ce même dossier créé deux dossiers différents, l’un se nommant CSS et IMAGES.
+        </li>
+        <li>  Pour continuer enregistré votre fichier html (que vous avez crée dans un logiciel comme atom ou sublime text)
+          dans le premier dossier crée , enregistrer le sou le nom  index.html
+        </li>
+        <li>
+         Le fichier css, enregistrer le dans le deuxième dossier que vous avez nommer css sous le nom de style.css
+        </li>
+        <li> Mettre vos images dans le dossier images.</li>
+      </ul>
+
+
+    </article>
+    <!-- balise inlineblock-->
+    <article class="justify-content-around col-12 text-justified m-2">
+      <h2 >Les balises de type block et inline</h2>
+      <p>Les balises block : c'est le cas de la balise "p"</p>
+      <p>Block: une balise de type block sur votre page web crée automatiquement un retour à la ligne avant et après.
+    </p>
+    <p> Il suffit d'imaginer tout simplement un bloc. Votre page web sera en fait constituée d'une série de blocs les uns à la suite des autres.<br>
+    Mais vous verrez qu'en plus, il est possible de mettre un bloc à l'intérieur d'un autre, ce qui va augmenter considérablement nos possibilités pour créer le design de notre site !
+    </p>
+      <p>Les balises inline : c'est le cas par exemple des liens</p>
+      <p>Inline: une balise de type inline se trouve obligatoirement à l'intérieur d'une balise block. Une balise inline ne crée pas de retour à la ligne, le texte qui se trouve à l'intérieur s'écrit donc à la suite du texte précédent,
+      sur la même ligne (c'est pour cela que l'on parle de balise « en ligne »).
+
+      <p> Afin de mieux vous aider à assimiler quelles balises sont inline et quelles balises sont block, voici un petit tableau dressant la liste de quelques balises courantes.
+      </p><br>
+
+        <h4><strong>Les balises de type block</strong></h4>
+        <img src="image/balise_block.PNG" alt="">
+
+        <h4><strong>Et les balises de type inline</strong></h4>
+        <img id="BEM" src="image/balise_inline.PNG" alt="">
+
+    </article>
+    <!-- balise inlineblock fin-->
+
+    <!-- Début du BEM -->
+    <article class="justify-content-around col-12 text-justified m-2">      <!-- introduction BEM -->
+      <h2> BEM </h2>
+
+      <p> <strong> BEM </strong> est l'acronyme de Modificateur d'élément de bloc (Block Element Modifier ) qui consiste en un modèle qui permet de nommer des classes d'éléments HTML.<br>
+      Cette méthode nous aide à travailler de manière plus efficace, plus rapide et plus claire, en soutenant tous ceux qui sont impliqués dans le projet en question et ceux qui peuvent venir s'intégrer ou simplement «aider» dans le processus. </p>
+
+      <h3>Blocs</h3>
+      <p> L'un des principes de la Méthodologie BEM recommande l'indépendance des blocs afin de faciliter la maintenance, car il se peut qu'à l'avenir vous deviez déplacer, ajouter ou supprimer des blocs. L'indépendance des blocs facilitera certainement
+      ces tâches. En bref, nous nommons la classe d'un bloc avec un nom qui l'identifie. Par exemple :</p>
+      </p>
+
+      <div class="article__code">
+        <h4 class="titre__html">HTML</h4>
+        <code>
+          <span><<span>div class="block"><<span>/</span>div>
+        </code>
+        <h4 class="titre__CSS">CSS</h4>
+        <code>.block { }</code>
+      </div><br>
+
+
+      <!-- elements BEM -->
+      <h3 class="titre__CSS">Éléments</h3>
+      <p> Un élément est une sorte de "pièce" du bloc, un menu est un élément d'un Bloc header. La méthodologie BEM suggère que les classes de noms soient formées de sorte que le nom du bloc vienne en premier, juste après le nom de l'élément et qu'ils
+      soient séparés par deux traits de soulignement (__).</p>
+
+      <div class="article__code">
+        <h4 class="titre__html">HTML</h4>
+        <code><span><</span>div class="block__element"><<span>/</span>div></code>
+        <h4 class="titre__CSS">CSS</h4>
+        <code>.block__element { }</code>
+      </div><br>
+      <p> <strong> Notez les autres exemples suivants: </strong></p>
+      <div class="article__code">
+        <h4 class="titre__CSS">CSS</h4>
+        <code>
+          .header__logo { } <br>
+          .header__slogan { }<br>
+          .header__searchbar { }<br>
+          .header__menu { }
+        </code>
+      </div><br>
+
+
+      <!-- modificateurs BEM -->
+      <h3 class="titre__CSS">Modificateurs</h3>
+      <p>Nous utilisons les modificateurs pour changer les styles d'un élément spécifique.</p>
+      <p>La méthodologie BEM recommande que si un modificateur doit être créé, il doit être écrit en syntaxe en utilisant deux traits d'union (-) après le nom de l'élément ou du bloc à modifier.</p>
+      <div class="article__code">
+        <h4 class="titre__CSS">CSS</h4>
+        <code>
+         .header__navigation { } <br>
+        .header__navigation--secondary { }
+        </code>
+      </div>
+
+      <p>"L'un des avantages de la méthodologie BEM est l'utilisation d'une seule classe par élément dans le code"</p>
+    </article>
+    <!-- Fin du BEM -->
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="JS/bronze.js">
+  </script>
+</body>
+
+</html>

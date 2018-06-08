@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html id="intro2">
+
+<head>
+  <title>INTOCODE</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <section class="container-fluid p-0 mb-5">
+    <header class=" fixed-top d-flex flex-column justify-content-center col-12 bg-secondary opacity-0.5 mb-5">
+      <div class="row d-flex justify-content-center">
+        <div class=" d-flex justify-content-center col-12  col-xs-12  col-sm-12 	col-md-6	 col-lg-6 	col-xl-6">
+          <h1>
+            <ul class=" d-flex list-inline mr-sm-auto col-sm-6 col-md-12 col-lg-12 col-12">
+              <li class="list-inline-item ">INTO</li>
+              <li class="list-inline-item">_</li>
+              <li class="list-inline-item ">CODE</li>
+            </ul>
+          </h1>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <nav class="navbar navbar-light  col-12 col-xs-12 col-sm-12 	col-md-6	 col-lg-6 	col-xl-6">
+          <div class="btn-group col-lg-3 col-12" role="group" aria-label="Button group with nested dropdown">
+            <a href="index1.2.html" class="btn btn-primary" role="button">HTML</a>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop2" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#intro">Introduction</a>
+                <a class="dropdown-item" href="#structure">Structure De Base</a>
+                <a class="dropdown-item" href="#balises">Balises Structurantes</a>
+                <a class="dropdown-item" href="#">Creation De Fichier HTML</a>
+                <a class="dropdown-item" href="#inline/block">Les Balises Inline/Block</a>
+                <a class="dropdown-item" href="#BEM">B.E.M</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group col-lg-3 col-12" role="group" aria-label="Button group with nested dropdown">
+            <a href="index2.2.html" class="btn btn-primary" role="button">CSS</a>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop2" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#">Introduction</a>
+                <a class="dropdown-item" href="#">Selecteurs</a>
+                <a class="dropdown-item" href="#">Propriétés/Valeurs Courantes</a>
+                <a class="dropdown-item" href="#">Margin/Padding</a>
+                <a class="dropdown-item" href="#">Flexbox</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group col-lg-3 col-12" role="group" aria-label="Button group with nested dropdown">
+            <a href="#intro" class="btn btn-primary" role="button">Framework</a>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop2" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop2" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#">Introduction</a>
+                <a class="dropdown-item" href="#">Bootstrap</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </section>
+
+  <section id="intro" class="block__body css_page" >
+    <article >
+      <h3>Introduction</h3>
+      <p>Les feuilles de styles (en anglais "Cascading Style Sheets", abrégé CSS) sont un langage qui permet de gérer la
+        présentation d'une page Web. Le CSS comprennent du code qui permet de gérer le design d'une page HTML.
+      </p>
+
+      <p>Voici un exemple de règle CSS :</p>
+
+      <img src="image/capture_ecran/CSS_exemple_1.png" alt="Exemple de code CSS">
+
+      <p id="selecteur__css">Explications : cette règle définit la couleur du fond(derrière de texte) et la
+        taille du texte pour les éléments <<code>p></code> (paragraphes) d'un
+        document HTML. Ainsi, tous les paragraphes auront un fond de couleur rouge
+        et une taille de 12 pixel.
+      </p>
+    </article>
+
+    <article >
+      <h3>Les selecteurs</h3>
+
+      <img src="image/capture_ecran/exemple_selecteur.png" alt="">
+
+      <p>Un sélecteur est un attribut qui permet de cibler un élément dans le HTML. Pour ce faire il faut au prealable
+        créer une "class" ou un "id". Pour utiliser une "class" en CSS on utilise le "."(point), et pour utiliser un "id" on utilise "#".
+      </p>
+      <img src="image/capture_ecran/exemple_id_class.png" alt="exemple de class et id en css">
+
+      <!-- Début de Propriétées et valeurs  CSS courantes-->
+      <article >
+        <h3>Proprietes et valeurs CSS courantes</h3>
+        <p>	La syntaxe de base du CSS est celle-ci :</p>
+
+        <img src="image/capture_ecran/exemple_selecteur.png" alt="">
+
+
+
+        <p>	Dans le Css il y a une longue liste de proprietes disponible en voici une petite partie !
+        </p>
+
+
+        <h4>Les proprietes de mise en forme du texte</h4>
+        <ul>
+          <li>"font-family"</li>
+          <p>Permet de changez la police de notre contenu.
+            Pour le changez que pour un seul element ou une selection de plusieurs elements dans notre page web par exemple
+            la balise "P" il faut indiquer le "selecteur" dans notre CSS</p>
+            <img src="image/capture_ecran/selecteur_css_liste.png" alt="">
+
+
+
+            <li>"@font-face"</li>
+            <p>Permet d'inclure une police telecharger ou juste avec le lien vers le site
+              l'incoveniant de mettre un lien vers un site est de soumettre un telechargeme aux utilisateurs du site
+              alors qu'en mettant votre chemin de votre police dans votre dossier il sera toujours present et visible par les utilisateurs
+            </p>
+            <li>"font-size"</li>
+            <p>Valeurs possibles: 1em, 1px, 1% </p>
+            <p>Permet de definir la taille de la police.</p>
+            <li>"font-weight</li>
+            <p>Valeurs possibles:bold, normal</p>
+            <p>Cette propriété met en gras le texte sélectionné</p>
+            <li>"font-style</li>
+            <p>Valeurs possibles:italic, normal</p>
+            <p>Cette propriété met en italique le texte sélectionné</p>
+            <li>"text-decoration"</li>
+            <p>Valeurs possibles:underline,overline,blink</p>
+            <p>Cette propriété souligne ou barre ou fait clignoter le texte.</p>
+
+          </ul>
+
+
+
+          <h4>Les proprietes de couleur</h4>
+          <ul>
+            <li>Propriété "color"</li>
+            <p>Valeurs possibles: RGB, hexadécimal</p>
+            <p>Cette propriété définit la couleur du texte.</p>
+
+
+            <li>Les proprietes de fond "Background"</li>
+            <p>Valeurs possibles:Super-propriété contenant "Super-propriété contenant
+              "background-size"(1em,1px ou 1%),"background-image"(img)
+              ,"background-color"(RGB, hexadécimal) </p>
+              <p>Cette propriété souligne ou barre ou fait clignoter le texte.</p>
+              <li>Les proprietes des bordures "Border"</li>
+              <p>Valeurs possibles:Super-propriété contenant "border-width"(1em,1px ou 1%),"border-style"(solid,dashed, dotted)
+                ,"border-color"(RGB, hexadécimal) </p>
+                <p  id="padding__css">Cette propriété entoure le contenu par une bordure.</p>
+              </ul>
+
+
+
+
+
+
+
+            </article>
+            <!-- Fin Propriétées et valeurs CSS courantes -->
+            <article>
+              <h3>Padding et margin:</h3>
+              <p> Pour chaque bloc html on peut définir l'espacement qui le séparera des autres éléments (margin)
+                et les espacements intérieurs (padding).
+              </p>
+              <img src="image/margin_padding.jpg" alt="exemple schéma margin et padding" />
+              <p> Margin: La marge externe définit l'espace entre le bloc et son extérieur,
+                Cette dernière spécifie d'un coup la valeur de la marge pour les quatre côtés à la fois.
+              </p>
+              <p> On peut aussi specifier une valeur en pourcentage ou en pixel
+                pour l'un des quatre coté .
+              </p>
+              <ul>
+                <li> .article{margin: 0px 10px 20px 30px}</li>
+                <li>.article{margin: 0% 10% 20% 30% }</li>
+                <p>  Si vous voulez entre plus precis dans le margin il vous suffit de mettre</p>
+                <li>.article{margin top ou bottom ou left ou encore right}</li>
+              </ul>
+            </p>
+            <p>Le padding est une zone, appelée aussi "marge interne" .
+              Elle est utilisée pour entourer de marge le "contenu" à
+              l'aide de 4 valeurs.
+            </p>
+            <p>La padding permet aussi de definir un distance entre des élément .</p>
+            <p> En voici un exemple </p>
+            <p id="flexbox"><ul>
+              <li>  padding-top : marge intérieure en haut </li>
+              <li>  padding-bottom : marge intérieure en bas</li>
+              <li>  padding-left : marge intérieure à gauche</li>
+              <li>  padding-right : marge intérieure à droite</li>
+            </ul>
+          </article>
+
+          <!--Debut Flebox -->
+          <article>
+            <h3>Presentation de Flexbox</h3>
+            <h4>Introduction</h4>
+            <p>	Flexbox est un module CSS utilise pour la mise en page.
+              Flexbox est organise selon un systeme bloc/element.
+              Le principe est simple : un bloc quelconque auquel est applique la propriete ''display''
+              et la valeur ''flex/inline-flex'' est defini en tant que conteneur flex.
+            </p>
+            <p>	Les elements a l'interieur de ce conteneur flex peuvent alors etre agences selon les
+              proprietes flexbox.
+            </p>
+            <p>	La syntaxe de base est celle-ci :</p>
+
+            <img src="image/capture_ecran/image_css_conteneur_flex.png" alt="">
+
+            <h4>Liste non-exhaustive des proprietes et valeurs Flexbox</h4>
+            <p>Les proprietes applicables aux conteneurs</p>
+            <ul>
+              <li>Propriete ''display'' :</li>
+              <p>Valeurs possibles : flex, inline-flex.</p>
+              <p>	Cette propriete definit un conteneur flex, de type bloc
+                avec la valeur ''flex'' ou de type inline avec la valeur
+                ''inline-flex''.
+              </p>
+              <li>Propriété ''flex-direction''</li>
+              <p>Valeurs possibles :row, row-reverse, column, column-reverse.</p>
+              <p>	Cette propriété définit l'axe et la direction où sont placés les éléments du bloc.</p>
+              <p>	En ligne de gauche à droite pour ''row'' et de droite à gauche pour ''row-reverse'', en colonne de haut en bas pour
+                '' column'' et de bas en haut pour ''column-reverse''.</p>
+                <li>Propriété ''flex-wrap''</li>
+                <p>Valeurs possibles :nowrap, wrap, wrap-reverse.</p>
+                <p>Cette propriété définit l'agencement en ligne des éléments.</p>
+                <p>Sur une seule ligne avec ''nowrap'', sur plusieurs avec
+                  ''wrap'' de haut en bas et de bas en haut avec ''wrap-reverse''.
+                </p>
+                <li>Propriété ''justify-content''</li>
+                <p>Valeurs possibles :flex-start, flex-end, center, space-between.
+                </p>
+                <p>Cette propriété définit la répartition de l'espace entre les éléments.</p>
+                <li>Propriété ''Flex-start''</li>
+                <p>	Les éléments sont groupés au début du
+                  conteneur, le bord du premier élément aligné avec le bord
+                  du conteneur.
+                </p>
+                <li>Propriété ''Flex-end''</li>
+                <p>	Les éléments sont regroupés à la fin du
+                  conteneur, le bord du dernier élément aligné avec le bord du conteneur.
+                </p>
+                <li>Propriété ''Center''</li>
+                <p>Les éléments sont groupés au centre du conteneur</p>
+                <li>Propriété''Space-between''</li>
+                <p>Les premiers et derniers élément
+                  sont alignés aux bords du conteneur, l'espace entre les éléments étant égaux
+                </p>
+              </ul>
+              <h4>Les propriétés applicables aux éléments</h4>
+              <ul>
+                <li>Propriété "Order"</li>
+                <p>Valeurs possibles : nombre entiers</p>
+                <p>Cette propriété définit l'ordre d'affichage des
+                  éléments selon leur nombre, en ordre croissant.
+                </p>
+                <li>Propriété ''flex-grow''</li>
+                <p>Valeurs possibles : nombre entiers</p>
+                <p>Cette propriété définit la capacité d'un élément à grossir, en fonction de son nombre
+                  et de celui des autres éléments. Un élément défini à 2 et les autres à 1 pourra prendre
+                  deux fois plus d'espace que les autres.</p>
+                  <li>Propriété ''flex-shrink''</li>
+                  <p>Valeurs possibles : nombre entiers</p>
+                  <p>Cette propriété complémentaire à la propriété
+                    ''flex-grow'' définit la capacité d'un élément à
+                    rétrecir, en fonction de son nombre et de celui des autres éléments. Un élément défini à 2 et les autres à 1 pourra se réduire de moitié.</p>
+                  </article>
+
+                  <!-- Fin Flexbox -->
+    </article>
+  </section>
+
+</body>
+</html>
